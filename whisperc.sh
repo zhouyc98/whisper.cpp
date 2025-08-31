@@ -6,7 +6,7 @@ usage() {
 BASE_DIR="$(dirname "$(realpath "$0")")" # support symlink
 
 lang="auto"
-model="$BASE_DIR/models/ggml-small.bin"
+model="$BASE_DIR/models/ggml-medium.bin"
 while getopts ':l:m:h' OPT; do
 	case $OPT in
 		l) lang="$OPTARG" ;;
